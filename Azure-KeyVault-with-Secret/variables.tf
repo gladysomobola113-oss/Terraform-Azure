@@ -11,4 +11,5 @@ variable "loc1" {
   type        = string
 db_password = "super-secret-password-123"
 
-}sensitive = true
+}sensitive = true 
+
