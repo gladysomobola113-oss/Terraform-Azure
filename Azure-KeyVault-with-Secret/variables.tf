@@ -9,4 +9,9 @@ variable "azure-rg-1" {
 variable "loc1" {
   description = "The location for this Lab environment"
   type        = string
+
+}variable "db_password" {
+  description = "The password for the database"
+  type        = string
+  sensitive   = true   # This is the security fix!
 }
