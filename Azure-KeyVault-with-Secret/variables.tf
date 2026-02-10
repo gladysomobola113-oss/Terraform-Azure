@@ -9,9 +9,13 @@ variable "azure-rg-1" {
 variable "loc1" {
   description = "The location for this Lab environment"
   type        = string
-db_password = "super-secret-password-123"
+variable "db_password" {
+  description = "The password for the database"
+  type        = string
+  sensitive   = true
+}
 
-}sensitive = true  
+
 
 
 
